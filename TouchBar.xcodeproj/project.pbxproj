@@ -9,15 +9,69 @@
 /* Begin PBXBuildFile section */
 		F20030AE1E7D1B5600FE374F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20030AD1E7D1B5600FE374F /* AppDelegate.swift */; };
 		F20030B01E7D1B5600FE374F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20030AF1E7D1B5600FE374F /* Assets.xcassets */; };
-		F20030B31E7D1B5600FE374F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20030B11E7D1B5600FE374F /* MainMenu.xib */; };
+		F2CF16D41E7D26DD00A3E764 /* DFRSupportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16D31E7D26DD00A3E764 /* DFRSupportKit.framework */; };
+		F2CF16D51E7D26DD00A3E764 /* DFRSupportKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16D31E7D26DD00A3E764 /* DFRSupportKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16D71E7D270A00A3E764 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16D61E7D270A00A3E764 /* DVTFoundation.framework */; };
+		F2CF16D91E7D271A00A3E764 /* DVTFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16D61E7D270A00A3E764 /* DVTFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16DB1E7D273900A3E764 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16DA1E7D273900A3E764 /* DVTKit.framework */; };
+		F2CF16DC1E7D273900A3E764 /* DVTKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16DA1E7D273900A3E764 /* DVTKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16DE1E7D283000A3E764 /* DTXConnectionServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16DD1E7D283000A3E764 /* DTXConnectionServices.framework */; };
+		F2CF16DF1E7D283000A3E764 /* DTXConnectionServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16DD1E7D283000A3E764 /* DTXConnectionServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16E11E7D286B00A3E764 /* DVTInstrumentsFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E01E7D286B00A3E764 /* DVTInstrumentsFoundation.framework */; };
+		F2CF16E21E7D286B00A3E764 /* DVTInstrumentsFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E01E7D286B00A3E764 /* DVTInstrumentsFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16E41E7D289A00A3E764 /* CoreSymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E31E7D289A00A3E764 /* CoreSymbolicationDT.framework */; };
+		F2CF16E51E7D289A00A3E764 /* CoreSymbolicationDT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E31E7D289A00A3E764 /* CoreSymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16E71E7D28B600A3E764 /* SymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E61E7D28B600A3E764 /* SymbolicationDT.framework */; };
+		F2CF16E81E7D28B600A3E764 /* SymbolicationDT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E61E7D28B600A3E764 /* SymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16EA1E7D28D600A3E764 /* kperfdataDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E91E7D28D600A3E764 /* kperfdataDT.framework */; };
+		F2CF16EB1E7D28D600A3E764 /* kperfdataDT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16E91E7D28D600A3E764 /* kperfdataDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16ED1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16EC1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework */; };
+		F2CF16EE1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16EC1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16F01E7D2ACB00A3E764 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16EF1E7D2ACB00A3E764 /* XCTest.framework */; };
+		F2CF16F21E7D2B0700A3E764 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2CF16EF1E7D2ACB00A3E764 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2CF16F51E7D306200A3E764 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CF16F31E7D306200A3E764 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2CF16D21E7D26C600A3E764 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2CF16D91E7D271A00A3E764 /* DVTFoundation.framework in Embed Frameworks */,
+				F2CF16E51E7D289A00A3E764 /* CoreSymbolicationDT.framework in Embed Frameworks */,
+				F2CF16D51E7D26DD00A3E764 /* DFRSupportKit.framework in Embed Frameworks */,
+				F2CF16EB1E7D28D600A3E764 /* kperfdataDT.framework in Embed Frameworks */,
+				F2CF16E21E7D286B00A3E764 /* DVTInstrumentsFoundation.framework in Embed Frameworks */,
+				F2CF16EE1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework in Embed Frameworks */,
+				F2CF16E81E7D28B600A3E764 /* SymbolicationDT.framework in Embed Frameworks */,
+				F2CF16F21E7D2B0700A3E764 /* XCTest.framework in Embed Frameworks */,
+				F2CF16DC1E7D273900A3E764 /* DVTKit.framework in Embed Frameworks */,
+				F2CF16DF1E7D283000A3E764 /* DTXConnectionServices.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F20030AA1E7D1B5600FE374F /* TouchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20030AD1E7D1B5600FE374F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F20030AF1E7D1B5600FE374F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F20030B21E7D1B5600FE374F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F20030B41E7D1B5600FE374F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20030BF1E7D22F700FE374F /* TouchBar-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TouchBar-Bridging-Header.h"; sourceTree = "<group>"; };
+		F2CF16D31E7D26DD00A3E764 /* DFRSupportKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRSupportKit.framework; path = /Applications/Xcode.app/Contents/Frameworks/DFRSupportKit.framework; sourceTree = "<absolute>"; };
+		F2CF16D61E7D270A00A3E764 /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework; sourceTree = "<group>"; };
+		F2CF16DA1E7D273900A3E764 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<absolute>"; };
+		F2CF16DD1E7D283000A3E764 /* DTXConnectionServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTXConnectionServices.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DTXConnectionServices.framework; sourceTree = "<absolute>"; };
+		F2CF16E01E7D286B00A3E764 /* DVTInstrumentsFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTInstrumentsFoundation.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DVTInstrumentsFoundation.framework; sourceTree = "<absolute>"; };
+		F2CF16E31E7D289A00A3E764 /* CoreSymbolicationDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSymbolicationDT.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/CoreSymbolicationDT.framework; sourceTree = "<absolute>"; };
+		F2CF16E61E7D28B600A3E764 /* SymbolicationDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SymbolicationDT.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/SymbolicationDT.framework; sourceTree = "<absolute>"; };
+		F2CF16E91E7D28D600A3E764 /* kperfdataDT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = kperfdataDT.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/kperfdataDT.framework; sourceTree = "<absolute>"; };
+		F2CF16EC1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTInstrumentsUtilities.framework; path = /Applications/Xcode.app/Contents/SharedFrameworks/DVTInstrumentsUtilities.framework; sourceTree = "<absolute>"; };
+		F2CF16EF1E7D2ACB00A3E764 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2CF16F41E7D306200A3E764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +79,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CF16D41E7D26DD00A3E764 /* DFRSupportKit.framework in Frameworks */,
+				F2CF16E41E7D289A00A3E764 /* CoreSymbolicationDT.framework in Frameworks */,
+				F2CF16D71E7D270A00A3E764 /* DVTFoundation.framework in Frameworks */,
+				F2CF16EA1E7D28D600A3E764 /* kperfdataDT.framework in Frameworks */,
+				F2CF16E11E7D286B00A3E764 /* DVTInstrumentsFoundation.framework in Frameworks */,
+				F2CF16ED1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework in Frameworks */,
+				F2CF16E71E7D28B600A3E764 /* SymbolicationDT.framework in Frameworks */,
+				F2CF16DB1E7D273900A3E764 /* DVTKit.framework in Frameworks */,
+				F2CF16F01E7D2ACB00A3E764 /* XCTest.framework in Frameworks */,
+				F2CF16DE1E7D283000A3E764 /* DTXConnectionServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +98,7 @@
 		F20030A11E7D1B5600FE374F = {
 			isa = PBXGroup;
 			children = (
+				F20030C31E7D252700FE374F /* Frameworks */,
 				F20030AC1E7D1B5600FE374F /* TouchBar */,
 				F20030AB1E7D1B5600FE374F /* Products */,
 			);
@@ -52,10 +117,28 @@
 			children = (
 				F20030AD1E7D1B5600FE374F /* AppDelegate.swift */,
 				F20030AF1E7D1B5600FE374F /* Assets.xcassets */,
-				F20030B11E7D1B5600FE374F /* MainMenu.xib */,
 				F20030B41E7D1B5600FE374F /* Info.plist */,
+				F20030BF1E7D22F700FE374F /* TouchBar-Bridging-Header.h */,
+				F2CF16F31E7D306200A3E764 /* MainMenu.xib */,
 			);
 			path = TouchBar;
+			sourceTree = "<group>";
+		};
+		F20030C31E7D252700FE374F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2CF16EC1E7D28F200A3E764 /* DVTInstrumentsUtilities.framework */,
+				F2CF16E91E7D28D600A3E764 /* kperfdataDT.framework */,
+				F2CF16E61E7D28B600A3E764 /* SymbolicationDT.framework */,
+				F2CF16E31E7D289A00A3E764 /* CoreSymbolicationDT.framework */,
+				F2CF16E01E7D286B00A3E764 /* DVTInstrumentsFoundation.framework */,
+				F2CF16DD1E7D283000A3E764 /* DTXConnectionServices.framework */,
+				F2CF16DA1E7D273900A3E764 /* DVTKit.framework */,
+				F2CF16EF1E7D2ACB00A3E764 /* XCTest.framework */,
+				F2CF16D61E7D270A00A3E764 /* DVTFoundation.framework */,
+				F2CF16D31E7D26DD00A3E764 /* DFRSupportKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +151,7 @@
 				F20030A61E7D1B5600FE374F /* Sources */,
 				F20030A71E7D1B5600FE374F /* Frameworks */,
 				F20030A81E7D1B5600FE374F /* Resources */,
+				F2CF16D21E7D26C600A3E764 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,7 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20030B01E7D1B5600FE374F /* Assets.xcassets in Resources */,
-				F20030B31E7D1B5600FE374F /* MainMenu.xib in Resources */,
+				F2CF16F51E7D306200A3E764 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,10 +221,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F20030B11E7D1B5600FE374F /* MainMenu.xib */ = {
+		F2CF16F31E7D306200A3E764 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F20030B21E7D1B5600FE374F /* Base */,
+				F2CF16F41E7D306200A3E764 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -244,10 +328,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZRU74Q6CGE;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/PlugIns,
+					/Applications/Xcode.app/Contents/Frameworks,
+					/Applications/Xcode.app/Contents/SharedFrameworks,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks,
+				);
 				INFOPLIST_FILE = TouchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.yyc.TouchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchBar/TouchBar-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -258,10 +349,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZRU74Q6CGE;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/PlugIns,
+					/Applications/Xcode.app/Contents/Frameworks,
+					/Applications/Xcode.app/Contents/SharedFrameworks,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks,
+				);
 				INFOPLIST_FILE = TouchBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.yyc.TouchBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchBar/TouchBar-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -285,6 +383,7 @@
 				F20030B91E7D1B5600FE374F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

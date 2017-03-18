@@ -9,13 +9,15 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    let controller = IDETouchBarSimulatorHostWindowController.simulatorHostWindowController()!
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        controller.window?.delegate = self
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
