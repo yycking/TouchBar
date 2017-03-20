@@ -31,7 +31,7 @@ private class ToolbarSliderCell: NSSliderCell {
 	}()
 	
 	override func drawKnob(_ knobRect: NSRect) {
-		ToolbarSliderCell.knob.draw(in: knobRect.insetBy(dx: 0, dy: 6.5))
+		ToolbarSliderCell.knob.draw(in: knobRect.insetBy(dx: 3, dy: 6.5))
 	}
 
 }
