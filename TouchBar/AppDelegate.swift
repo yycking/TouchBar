@@ -32,9 +32,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     func addTransparencySlider() {
         let toolbarView = controller.window!.standardWindowButton(.closeButton)!.superview!
-        let slider = NSSlider()
+        let slider = ToolbarSlider()
         slider.frame = CGRect(x: toolbarView.frame.width - 120, y: 4, width: 120, height: 11)
-        slider.action = #selector(settTransparency(sender:))
+        slider.action = #selector(settTransparency)
         toolbarView.addSubview(slider)
         
         var transparency = UserDefaults.standard.double(forKey: "TransparencySlider")
