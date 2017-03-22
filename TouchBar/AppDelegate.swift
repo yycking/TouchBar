@@ -12,6 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     @IBOutlet weak var miniWindow: NSWindow!
+	var touchBarView: NSView!
 	var touchBarController = IDETouchBarSimulatorHostWindowController.simulatorHostWindowController()!
 
 	// MARK: - NSApplicationDelegate
@@ -21,35 +22,23 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 		
 		// setup: touch bar
         setupTouchBar()
-		
-		// setup: mini bar
-		miniWindow.appearance = NSAppearance(named: NSAppearanceNameVibrantDark)
-		miniWindow.level = Int(CGWindowLevelForKey(.statusWindow))
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-    
-    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
-		if let window = touchBarController.window, window.isVisible {
-			return false
-		}
-		if miniWindow.isVisible {
-			return false
-		}
-        return true
-    }
+	
+	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+		return true
+	}
 	
 	// MARK: - NSWindowDelegate
 	
 	// MARK: - Touch Bar
 	func setupTouchBar() {
-		guard
-			let window = touchBarController.window,
-			let closeButton = window.standardWindowButton(.closeButton),
-			let toolbarView = closeButton.superview
-			else { return }
+		let window = touchBarController.window!
+		let closeButton = window.standardWindowButton(.closeButton)!
+		let toolbarView = closeButton.superview!
 		
 		closeButton.target = self
 		closeButton.action = #selector(showMini)
@@ -66,35 +55,45 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 		slider.minValue = 0.5
 		slider.doubleValue = transparency
 		window.alphaValue = CGFloat(slider.doubleValue)
-	}
-	
-	@IBAction func showTouchBar(_ sender: NSButton) {
-		guard
-			let window = touchBarController.window
-			else { return }
 		
-		window.setFrameOrigin(miniWindow.frame.origin)
-		window.setIsVisible(true)
-		miniWindow.setIsVisible(false)
+		touchBarView = window.contentView
 	}
 	
 	// MARK: - TransparencySlider
 	
 	func setTransparency(sender : NSSlider) {
-		guard let window = touchBarController.window else { return }
-		
-		window.alphaValue = CGFloat(sender.doubleValue)
+		touchBarController.window!.alphaValue = CGFloat(sender.doubleValue)
 		UserDefaults.standard.set(sender.doubleValue, forKey: "TransparencySlider")
 	}
 	
 	func showMini() {
-		guard
-			let window = touchBarController.window
-			else { return }
+		let window = touchBarController.window!
 		
-		window.setIsVisible(false)
-		miniWindow.setIsVisible(true)
-		miniWindow.setFrameOrigin(window.frame.origin)
+		if window.contentView == touchBarView {
+			let toolbarView = window.standardWindowButton(.closeButton)!.superview!
+			
+			let button = NSButton()
+			button.image = NSImage(named: "AppIcon")
+			button.isBordered = false
+			button.imagePosition = .imageOnly
+			button.imageScaling = .scaleAxesIndependently
+			button.target = self
+			button.action = #selector(showTouchBar)
+			window.contentView = button
+			
+			var frame = window.frame
+			frame.size.width = frame.size.height - toolbarView.frame.size.height
+			button.frame = NSRect(origin: CGPoint.zero, size: frame.size)
+			window.setFrame(frame, display: true, animate: true)
+		} else {
+			window.close()
+		}
+	}
+	
+	func showTouchBar() {
+		let window = touchBarController.window!
+		
+		window.contentView = touchBarView
 	}
 }
 
