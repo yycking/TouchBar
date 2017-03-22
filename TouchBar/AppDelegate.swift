@@ -24,6 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 		
 		// setup: mini bar
 		miniWindow.appearance = NSAppearance(named: NSAppearanceNameVibrantDark)
+		miniWindow.level = Int(CGWindowLevelForKey(.statusWindow))
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
